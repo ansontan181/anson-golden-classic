@@ -7,12 +7,13 @@
 <style>
   body{
     margin:0;
-    background:#000 url("WEBSIDE/MR.Anson.png") no-repeat center top;
+    background:#000 url("MR.Anson.png") no-repeat center top;
     background-size:cover;
     text-align:center;
   }
 
-  .wrapper{ padding-top:320px; } /* 整体下移，避免挡住背景文字 */
+  /* 整体往下移，避免挡住背景标题；觉得挡就把数值再加大一些 */
+  .wrapper{ padding-top:320px; }
 
   .row{
     display:grid;
@@ -37,47 +38,58 @@
     height:56px; display:block; margin-top:8px;
     filter:drop-shadow(0 4px 10px rgba(0,0,0,.45));
   }
+
+  @media (max-width:900px){
+    .wrapper{ padding-top:220px; }
+    .main{ height:190px; }
+    .label{ height:48px; }
+  }
+  @media (max-width:560px){
+    .row{ grid-template-columns:1fr; }
+    .main{ height:180px; }
+    .label{ height:44px; }
+  }
 </style>
 </head>
 <body>
   <div class="wrapper">
-    <!-- 第一排 -->
+    <!-- 第一排：1~4 -->
     <div class="row">
       <a class="card" href="https://www.youtube.com/watch?v=5vFAHdF5fxc" target="_blank">
-        <img class="main" src="WEBSIDE/1.png" alt="1">
-        <img class="label" src="WEBSIDE/A.png" alt="A">
+        <img class="main" src="1.png" alt="1">
+        <img class="label" src="A.png" alt="A">
       </a>
       <a class="card" href="https://www.youtube.com/watch?v=CCOZlEg1uN4" target="_blank">
-        <img class="main" src="WEBSIDE/2.png" alt="2">
-        <img class="label" src="WEBSIDE/B.png" alt="B">
+        <img class="main" src="2.png" alt="2">
+        <img class="label" src="B.png" alt="B">
       </a>
       <a class="card" href="https://www.youtube.com/watch?v=gdfRWUmUVkI" target="_blank">
-        <img class="main" src="WEBSIDE/3.png" alt="3">
-        <img class="label" src="WEBSIDE/C.png" alt="C">
+        <img class="main" src="3.png" alt="3">
+        <img class="label" src="C.png" alt="C">
       </a>
       <a class="card" href="https://www.youtube.com/watch?v=jg1MiGaO2fs" target="_blank">
-        <img class="main" src="WEBSIDE/4.png" alt="4">
-        <img class="label" src="WEBSIDE/D.png" alt="D">
+        <img class="main" src="4.png" alt="4">
+        <img class="label" src="D.png" alt="D">
       </a>
     </div>
 
-    <!-- 第二排 -->
+    <!-- 第二排：5~8 -->
     <div class="row">
       <a class="card" href="https://www.youtube.com/watch?v=k3azvd-3WVQ" target="_blank">
-        <img class="main" src="WEBSIDE/5.png" alt="5">
-        <img class="label" src="WEBSIDE/E.png" alt="E">
+        <img class="main" src="5.png" alt="5">
+        <img class="label" src="E.png" alt="E">
       </a>
       <a class="card" href="https://www.youtube.com/watch?v=ytgPiWwZm08" target="_blank">
-        <img class="main" src="WEBSIDE/6.png" alt="6">
-        <img class="label" src="WEBSIDE/F.png" alt="F">
+        <img class="main" src="6.png" alt="6">
+        <img class="label" src="F.png" alt="F">
       </a>
       <a class="card" href="https://www.youtube.com/watch?v=eZuDklxsaRg" target="_blank">
-        <img class="main" src="WEBSIDE/7.png" alt="7">
-        <img class="label" src="WEBSIDE/G.png" alt="G">
+        <img class="main" src="7.png" alt="7">
+        <img class="label" src="G.png" alt="G">
       </a>
       <a class="card" href="https://www.youtube.com/watch?v=sOiMD45QGLs" target="_blank">
-        <img class="main" src="WEBSIDE/8.png" alt="8">
-        <img class="label" src="WEBSIDE/H.png" alt="H">
+        <img class="main" src="8.png" alt="8">
+        <img class="label" src="H.png" alt="H">
       </a>
     </div>
   </div>
